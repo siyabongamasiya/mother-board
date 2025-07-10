@@ -1,59 +1,138 @@
-html,body{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+/* Variables */
+:root {
+  --background-color: #0a0a40;        
+  --text-color: #f0f0f0;              
+  --highlight-color: #ffeb3b;         
+  --font-family: 'Courier New', Courier, monospace;
 }
 
-img{
-    width: 100%;
-    height: 100vh;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
 }
 
-main{
+/* Fade classes */
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* Toggle Button Styling */
+#go-to-bios {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: var(--font-family);
+  background-color: #222;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+#go-to-bios:hover {
+  background-color: #333;
+}
+
+/* Layout */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#image-container{
     position: relative;
+    width: auto;
 }
 
-.element{
-    width: 12vw;
-    height: 8vw;
-    background-color: aquamarine;
-    padding: 20px;
-    border-radius: 8px;
-    opacity: 0;
+main img {
+  max-width: 100%;
+  width: auto;
+  border: 2px solid var(--highlight-color);
+  margin-bottom: 30px;
 }
 
-#usb-input{
-    position: absolute;
-    top: 0%;
-    left: 56%;
+/* Info Box Styling */
+#text-panel{
+  background-color: black;
+  padding: 15px;
+  margin: 10px;
+  border-left: 4px solid var(--highlight-color);
+  width: 90%;
+  max-width: 300px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
 }
 
-#keyboard-input{
-    position: absolute;
-    top: 0%;
-    left: 43%;
+.text-panel-title {
+  font-weight: bold;
+  color: var(--highlight-color);
+  margin-bottom: 5px;
 }
 
-#cmos{
-    position: absolute;
-    top: 0%;
-    left: 90vw;
-    font-size: 1vw;
+#usb-input {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  width: 150px;
+  opacity: 0;
+  height: 50px;
 }
 
-#cpu{
-    position: absolute;
-    font-size: 1vw;
-    top: 10%;
-    left: 75vw;
+#keyboard-input {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  width: 150px;
+  opacity: 0;
+  height: 50px;
+}
+#cmos {
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  width: 150px;
+  opacity: 0;
+  height: 50px;
 }
 
-#ram{
-    position: absolute;
-    font-size: 2vw;
-    top: 40%;
-    left: 20vw;
-    height: 30vw;
+#cpu {
+  position: absolute;
+  top:10%;
+  left: 75%;
+  width: 150px;
+  opacity: 0;
+  height: 100px;
 }
+
+#ram {
+  position: absolute;
+  top:25%;
+  left: 23%;
+  width: 40px;
+  opacity: 0;
+  height: 800px;
+}
+

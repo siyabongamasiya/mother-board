@@ -1,103 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles_bios.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIOS Interface</title>
+  <link rel="stylesheet" href="./styles_bios.css" />
 </head>
-<body>
-    <main>
-        <table id="table-details">
-        <tr>
-            <th>CPU Clock Control</th>
-            <th>Auto</th>
-            <th>100.00MHz</th>
-        </tr>
-        <tr>
-            <td>Spread Spectrum Control</td>
-            <td>Auto</td>
-            <td> </td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-        <tr>
-           <td>Advanced CPU Settings</td>
-           <td> </td>
-           <td> </td>
-        </tr>
-        <tr>
-           <td>Extreme Memory Profile</td>
-           <td>Disabled</td>
-           <td> </td>
-        </tr>
-        <tr>
-           <td>System Memory Multiplier</td>
-           <td>Auto</td>
-           <td>21.33</td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-        <tr>
-           <td>CPU Clock Ratio</td>
-           <td>Auto</td>
-           <td>34.00</td>
-        </tr>
-</table>
+<body class="fade-in">
+
+  <!-- Toggle Button -->
+  <button id="back-to-motherboard">Back to Motherboard</button>
+
+  <main>
+    <table>
+      <tr><th>Setting</th><th>Mode</th><th>Value</th></tr>
+      <tr><td>CPU Clock Control</td><td>Auto</td><td>100.00 MHz</td></tr>
+      <tr><td>Spread Spectrum Control</td><td>Auto</td><td>-</td></tr>
+      <tr><td>CPU Clock Ratio</td><td>Manual</td><td>34.00</td></tr>
+      <tr><td>Advanced CPU Settings</td><td>-</td><td>-</td></tr>
+      <tr><td>Extreme Memory Profile</td><td>Disabled</td><td>-</td></tr>
+      <tr><td>System Memory Multiplier</td><td>Auto</td><td>21.33</td></tr>
+      <tr><td>Uncore Ratio</td><td>Auto</td><td>24.00</td></tr>
+      <tr><td>DRAM Voltage</td><td>Auto</td><td>1.200V</td></tr>
+      <tr><td>Vcore</td><td>Auto</td><td>1.150V</td></tr>
+      <tr><td>Load-Line Calibration</td><td>Enabled</td><td>-</td></tr>
+      <tr><td>CPU VRIN External Override</td><td>Auto</td><td>1.800V</td></tr>
+    </table>
+
     <div id="side-details">
-        <div>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-        </div>
-        <div>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-        </div>
-        <div>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-        </div>
+      <div>
+        <p><strong>CPU</strong></p>
+        <p>Frequency: 3414.96 MHz</p>
+        <p>Temperature: 35.0 °C</p>
+      </div>
+      <div>
+        <p><strong>Memory</strong></p>
+        <p>Frequency: 2142.72 MHz</p>
+        <p>Channel A/B Voltage: 1.236V</p>
+      </div>
+      <div>
+        <p><strong>Voltage</strong></p>
+        <p>CHIPSET Core: 0.990V</p>
+        <p>+12V: 12.168V</p>
+      </div>
     </div>
-    </main>
+  </main>
+  <script src="./bios-script.js"></script>
 </body>
 </html>
