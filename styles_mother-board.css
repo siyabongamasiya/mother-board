@@ -1,0 +1,59 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+}
+
+.element{
+    width: 12vw;
+    height: 8vw;
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+#usb-input{
+    position: absolute;
+    top: 0%;
+    left: 56%;
+}
+
+#keyboard-input{
+    position: absolute;
+    top: 0%;
+    left: 43%;
+}
+
+#cmos{
+    position: absolute;
+    top: 0%;
+    left: 90vw;
+    font-size: 1vw;
+}
+
+#cpu{
+    position: absolute;
+    font-size: 1vw;
+    top: 10%;
+    left: 75vw;
+}
+
+#ram{
+    position: absolute;
+    font-size: 2vw;
+    top: 40%;
+    left: 20vw;
+    height: 30vw;
+}

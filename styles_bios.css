@@ -1,0 +1,42 @@
+:root{
+    /*colors*/
+    --text-color:grey;
+    --background-color:blue;
+    --table-hearder-color:hsl(0,0%,30%);
+
+    /*fonts*/
+    --universal-font:'Courier';
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier';
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+#table{
+    width: 30%;
+    height: 100vh;
+}
+
+#table-details{
+    width: 70%;
+    height: 100vh;
+}
+
+#side-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+th{
+    background-color: var(--table-hearder-color);
+}
